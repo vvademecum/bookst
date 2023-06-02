@@ -1,0 +1,49 @@
+﻿<Window x:Class="BookStore.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookStore"
+        mc:Ignorable="d"
+        Title="Registration" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Фамилия:" TextAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"></TextBlock>
+        <TextBox x:Name="Surname" Style="{StaticResource ResourceKey=defaultInput}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"></TextBox>
+
+        <TextBlock Text="Имя:" TextAlignment="Center" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"></TextBlock>
+        <TextBox x:Name="Name" Style="{StaticResource ResourceKey=defaultInput}" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"></TextBox>
+
+        <TextBlock Text="Отчество:" TextAlignment="Center" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"></TextBlock>
+        <TextBox x:Name="Patronymic" Style="{StaticResource ResourceKey=defaultInput}" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"></TextBox>
+
+        <TextBlock Text="Логин:" TextAlignment="Center" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2"></TextBlock>
+        <TextBox x:Name="Login" Style="{StaticResource ResourceKey=defaultInput}" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2"></TextBox>
+
+        <TextBlock Text="Пароль:" TextAlignment="Center" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2"></TextBlock>
+        <PasswordBox x:Name="Password" Style="{StaticResource ResourceKey=defaultPB}" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2"></PasswordBox>
+
+        <TextBlock Text="Повторите пароль:" TextAlignment="Center" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2"></TextBlock>
+        <PasswordBox x:Name="RePassword" Style="{StaticResource ResourceKey=defaultPB}" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2"></PasswordBox>
+
+        <Button x:Name="GoBackBtn" Content="Назад!" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource defaultBtn}" Click="GoBackBtn_Click"></Button>
+        <Button x:Name="GoRegistrationBtn" Content="Вперед!" Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" Style="{StaticResource defaultBtn}" Click="GoRegistrationBtn_Click"></Button>
+    </Grid>
+</Window>
